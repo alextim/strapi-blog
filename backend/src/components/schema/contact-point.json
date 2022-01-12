@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_schema_contact_points",
+  "info": {
+    "displayName": "contactPoint",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contactType": {
+      "type": "string"
+    },
+    "contactTypeName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.phone"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.email"
+    },
+    "areaServed": {
+      "type": "string"
+    }
+  }
+}

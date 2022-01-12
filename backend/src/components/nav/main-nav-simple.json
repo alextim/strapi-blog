@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_nav_main_nav_simples",
+  "info": {
+    "displayName": "mainNavSimple",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "navItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "nav.nav-item-simple"
+    }
+  }
+}

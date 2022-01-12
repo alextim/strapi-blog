@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_metas_social_metas",
+  "info": {
+    "displayName": "SocialMetas",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "Facebook": {
+      "type": "component",
+      "repeatable": false,
+      "component": "metas.facebook-metas"
+    },
+    "Twitter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "metas.twitter-metas"
+    }
+  }
+}

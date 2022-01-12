@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_global_configs",
+  "info": {
+    "displayName": "Config",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "siteUrl": {
+      "type": "string",
+      "required": true
+    },
+    "googleAnalyticsID": {
+      "type": "string"
+    },
+    "cardsPerPage": {
+      "type": "integer",
+      "default": 12,
+      "required": true,
+      "min": 1
+    },
+    "readMore": {
+      "type": "string",
+      "required": true,
+      "default": "post.readMore"
+    }
+  }
+}

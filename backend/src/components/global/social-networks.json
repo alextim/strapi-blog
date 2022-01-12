@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_global_social_networks",
+  "info": {
+    "displayName": "socialNetwork",
+    "icon": "network-wired",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "code": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "f500px"
+      ],
+      "required": true
+    }
+  }
+}

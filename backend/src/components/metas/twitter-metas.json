@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_metas_twitter_metas",
+  "info": {
+    "displayName": "TwitterMetas",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "twitterSite": {
+      "type": "string"
+    },
+    "twitterCreator": {
+      "type": "string"
+    },
+    "twitterImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image-width-height"
+    }
+  }
+}

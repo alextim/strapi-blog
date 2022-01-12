@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_links_nav_items",
+  "info": {
+    "displayName": "navItem",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "to": {
+      "type": "string",
+      "required": false
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "submenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    }
+  }
+}

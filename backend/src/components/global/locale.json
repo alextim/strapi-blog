@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_global_locales",
+  "info": {
+    "displayName": "Locale",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 2,
+      "minLength": 2
+    },
+    "htmlLang": {
+      "type": "string",
+      "maxLength": 2,
+      "minLength": 2,
+      "required": true
+    },
+    "formatLocale": {
+      "type": "string",
+      "required": true,
+      "maxLength": 5,
+      "minLength": 5
+    },
+    "ogLocale": {
+      "type": "string",
+      "required": true,
+      "maxLength": 5,
+      "minLength": 5
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 3,
+      "minLength": 2
+    },
+    "localName": {
+      "type": "string",
+      "required": true
+    },
+    "shortLocalName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 3,
+      "minLength": 2
+    },
+    "dateFormat": {
+      "type": "string",
+      "required": true
+    },
+    "siteTitle": {
+      "type": "string",
+      "required": true
+    },
+    "siteDescription": {
+      "type": "string",
+      "required": true
+    },
+    "siteShortName": {
+      "type": "string",
+      "required": true
+    },
+    "siteHeadline": {
+      "type": "string",
+      "required": true
+    },
+    "isDefaultLocale": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

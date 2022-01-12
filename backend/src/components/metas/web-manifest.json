@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_metas_web_manifests",
+  "info": {
+    "displayName": "WebManifest",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "themeColor": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

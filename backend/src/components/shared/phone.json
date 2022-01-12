@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_phones",
+  "info": {
+    "displayName": "Phone",
+    "icon": "arrow-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

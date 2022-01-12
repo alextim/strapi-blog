@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_sections",
+  "info": {
+    "displayName": "Section",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.simple-link"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_schema_geos",
+  "info": {
+    "displayName": "Geo",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

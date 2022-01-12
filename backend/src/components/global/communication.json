@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_global_communications",
+  "info": {
+    "displayName": "Communication",
+    "icon": "cart-plus"
+  },
+  "options": {},
+  "attributes": {
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.phone"
+    },
+    "emails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.email"
+    },
+    "skype": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.phone"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "viber": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.phone"
+    },
+    "fax": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.phone"
+    }
+  }
+}

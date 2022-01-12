@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_links_simple_links",
+  "info": {
+    "displayName": "simpleLink",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank"
+      ]
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

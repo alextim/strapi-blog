@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_metas_facebook_metas",
+  "info": {
+    "displayName": "FacebookMetas",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fbAppId": {
+      "type": "string"
+    },
+    "ogImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image-width-height"
+    }
+  }
+}

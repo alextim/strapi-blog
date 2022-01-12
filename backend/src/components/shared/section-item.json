@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_section_items",
+  "info": {
+    "displayName": "sectionItem",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

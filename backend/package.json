@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A Strapi backend",
+  "scripts": {
+    "dev": "yarn prebuild && strapi develop",
+    "start": "yarn prebuild && strapi start",
+    "build": "yarn prebuild && strapi build",
+    "strapi": "strapi",
+    "prebuild": "node ./.scripts/index.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/design-system": "^0.0.1-alpha.71",
+    "@strapi/plugin-i18n": "4.0.4",
+    "@strapi/plugin-users-permissions": "4.0.4",
+    "@strapi/strapi": "4.0.4",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
+    "reading-time": "^1.5.0",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b5dcc99a-63f4-4c82-8b0b-5edef208f6b0"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

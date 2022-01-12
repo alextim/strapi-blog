@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_schema_organization",
+  "info": {
+    "displayName": "organization",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "organizationType": {
+      "type": "enumeration",
+      "enum": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "required": true,
+      "default": "LocalBusiness"
+    },
+    "geo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "schema.geo"
+    },
+    "hasMap": {
+      "type": "string"
+    },
+    "embedMap": {
+      "type": "string"
+    },
+    "openingHours": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schema.opening-hours"
+    },
+    "priceRange": {
+      "type": "enumeration",
+      "enum": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "foundingDate": {
+      "type": "date",
+      "required": false
+    },
+    "currenciesAccepted": {
+      "type": "string"
+    },
+    "paymentAccepted": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

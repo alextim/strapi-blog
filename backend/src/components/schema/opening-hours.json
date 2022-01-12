@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_schema_opening_hours",
+  "info": {
+    "displayName": "openingHours",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dayOfWeek": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "opens": {
+      "type": "time",
+      "required": true
+    },
+    "closes": {
+      "type": "time",
+      "required": true
+    }
+  }
+}

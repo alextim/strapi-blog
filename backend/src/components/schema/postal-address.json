@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_schema_postal_addresses",
+  "info": {
+    "displayName": "PostalAddress",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "streetAddress": {
+      "type": "string",
+      "default": "streetAddress"
+    },
+    "addressLocality": {
+      "type": "string"
+    },
+    "addressRegion": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "addressCountry": {
+      "type": "string"
+    },
+    "addressCountryName": {
+      "type": "string"
+    }
+  }
+}

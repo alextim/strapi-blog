@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_media_image_width_height",
+  "info": {
+    "displayName": "ImageWidthHeight",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "required": true
+    },
+    "height": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

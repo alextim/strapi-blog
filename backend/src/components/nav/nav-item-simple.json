@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_nav_nav_item_simples",
+  "info": {
+    "displayName": "navItemSimple",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "to": {
+      "type": "string",
+      "required": false
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

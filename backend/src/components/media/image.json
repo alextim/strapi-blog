@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_media_images",
+  "info": {
+    "displayName": "Image",
+    "icon": "ankh",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "alt": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_home_heroes",
+  "info": {
+    "displayName": "HomeHero",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "mobileImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "tabletImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "desktopImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    }
+  }
+}
