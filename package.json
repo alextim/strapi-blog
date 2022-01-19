@@ -19,7 +19,8 @@
     "format": "yarn prettier --write",
     "lint": "yarn workspaces run lint",
     "lint:fix": "yarn workspaces run lint:fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
