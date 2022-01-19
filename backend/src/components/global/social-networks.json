@@ -17,11 +17,7 @@
     },
     "code": {
       "type": "enumeration",
-      "enum": [
-        "facebook",
-        "instagram",
-        "f500px"
-      ],
+      "enum": ["facebook", "instagram", "f500px"],
       "required": true
     }
   }

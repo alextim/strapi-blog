@@ -9,10 +9,7 @@
   "attributes": {
     "organizationType": {
       "type": "enumeration",
-      "enum": [
-        "LocalBusiness",
-        "ProfessionalService"
-      ],
+      "enum": ["LocalBusiness", "ProfessionalService"],
       "required": true,
       "default": "LocalBusiness"
     },
@@ -34,12 +31,7 @@
     },
     "priceRange": {
       "type": "enumeration",
-      "enum": [
-        "a",
-        "b",
-        "c",
-        "d"
-      ]
+      "enum": ["a", "b", "c", "d"]
     },
     "foundingDate": {
       "type": "date",
@@ -52,16 +44,12 @@
       "type": "string"
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "type": "media",
       "multiple": false
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "type": "media",
       "multiple": true
     }
