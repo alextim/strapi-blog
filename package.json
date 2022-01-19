@@ -18,7 +18,7 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|json|css)\"",
     "format": "yarn prettier --write",
     "lint": "yarn workspaces run lint",
-    "lint:write": "yarn workspaces run lint:write",
+    "lint:fix": "yarn workspaces run lint:fix",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -37,10 +37,5 @@
     "husky": "^7.0.0",
     "lint-staged": "^12.2.1",
     "prettier": "^2.5.1"
-  },
-  "lint-staged": {
-    "**/*.+(js|jsx|ts|tsx|json|css)": [
-      "yarn format"
-    ]
   }
 }

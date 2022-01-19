@@ -1,4 +1,4 @@
 module.exports = {
-  '*.{js,ts,tsx}': ['lint:write'],
+  '*.{js,ts,tsx}': ['eslint --fix'],
   '*.{md,mdx,json,yaml}': ['prettier "**/*.{md,mdx,json,yaml}" --write'],
 };

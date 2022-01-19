@@ -13,7 +13,7 @@
     "ncu": "ncu -u",
     "lint": "eslint .",
     "lint:debug": "eslint --debug .",
-    "lint:write": "eslint . --fix",
+    "lint:fix": "eslint . --fix",
     "prettier": "prettier --write src/**/*.js"
   },
   "devDependencies": {},

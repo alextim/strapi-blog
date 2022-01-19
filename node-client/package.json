@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint .",
-    "lint:write": "eslint . --fix",
+    "lint:fix": "eslint . --fix",
     "ncu": "ncu -u"
   },
   "dependencies": {

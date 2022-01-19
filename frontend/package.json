@@ -9,7 +9,7 @@
     "start": "next start",
     "lint:next": "next lint",
     "lint": "eslint .",
-    "lint:write": "eslint . --fix"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "next": "^12.0.8",
