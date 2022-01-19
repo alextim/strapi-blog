@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-// const prompt = require('prompt-sync')({sigint: true});
 const result = require('dotenv').config({ path: '../backend/.env' });
 const authentication = require('./src/authentication');
 const fetchData = require('./src/fetch');
