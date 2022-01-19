@@ -8,6 +8,11 @@
     "kind": "plugin"
   },
   "dependencies": {},
+  "peerDependencies": {
+    "@strapi/helper-plugin": "^4.0.4",
+    "axios": "^0.25.0",
+    "react": ">=17.0.0"
+  },
   "author": {
     "name": "A Strapi developer"
   },

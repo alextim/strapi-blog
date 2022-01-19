@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * translation service.
  */

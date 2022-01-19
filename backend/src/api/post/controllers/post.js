@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *  post controller
  */
@@ -13,21 +11,21 @@ const populate = {
     },
   },
   tags: {
-    fields: [ 'name', 'slug', 'sortOrder' ],
+    fields: ['name', 'slug', 'sortOrder'],
   },
   categories: {
-    fields: [ 'name', 'slug', 'sortOrder' ],
+    fields: ['name', 'slug', 'sortOrder'],
   },
   authors: {
-    fields: [ 'firstName', 'lastName' ],
+    fields: ['firstName', 'lastName'],
   },
   seo: {
     populate: {
       shareImage: {
-        fields: [ 'url' ],
+        fields: ['url'],
       },
       meta: true,
-    }
+    },
   },
   localizations: {
     fields: ['locale', 'slug'],
@@ -37,7 +35,7 @@ const populate = {
 module.exports = createCoreController('api::post.post', ({ strapi }) => ({
   async find(ctx) {
     const { query } = ctx;
-    console.log(query);
+
     const entity = await strapi.entityService.findMany('api::post.post', {
       ...query,
       populate,
@@ -53,7 +51,7 @@ module.exports = createCoreController('api::post.post', ({ strapi }) => ({
 
     const entity = await strapi.service('api::post.post').findOne(id, {
       ...query,
-      populate
+      populate,
     });
     const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
 

@@ -1,4 +1,3 @@
-'use strict';
 const readingTime = require('reading-time');
 
 const getReadingTime = (text) => {
@@ -15,12 +14,12 @@ const getReadingTime = (text) => {
 
 module.exports = {
   beforeCreate(event) {
+    // eslint-disable-next-line no-param-reassign
     event.params.data.readingTime = getReadingTime(event.params.data.content);
   },
 
   beforeUpdate(event) {
+    // eslint-disable-next-line no-param-reassign
     event.params.data.readingTime = getReadingTime(event.params.data.content);
   },
 };
-
-

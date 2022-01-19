@@ -1,37 +1,30 @@
-
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
-import pluginPkg from '../../package.json';
+// import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
-import Initializer from './components/Initializer';
-import PluginIcon from './components/PluginIcon';
-import MyFirstField from './components/MyFirstField';
+// import Initializer from './components/Initializer';
+// import PluginIcon from './components/PluginIcon';
 
+import MyFirstField from './components/MyFirstField/Field';
 
 export default {
   register(app) {
-    app.addFields([
-      { type: 'my_custom_field_renderer', Component: MyFirstField },
-    ]);
+    app.addFields([{ type: 'my_custom_field_renderer', Component: MyFirstField }]);
   },
 
-  bootstrap(app) {},
+  bootstrap(/* app */) {},
   async registerTrads({ locales }) {
     const importedTrads = await Promise.all(
-      locales.map(locale => {
-        return import(`./translations/${locale}.json`)
-          .then(({ default: data }) => {
-            return {
-              data: prefixPluginTranslations(data, pluginId),
-              locale,
-            };
-          })
-          .catch(() => {
-            return {
-              data: {},
-              locale,
-            };
-          });
-      })
+      locales.map((locale) =>
+        import(`./translations/${locale}.json`)
+          .then(({ default: data }) => ({
+            data: prefixPluginTranslations(data, pluginId),
+            locale,
+          }))
+          .catch(() => ({
+            data: {},
+            locale,
+          })),
+      ),
     );
 
     return Promise.resolve(importedTrads);

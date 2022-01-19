@@ -6,7 +6,41 @@
   "private": true,
   "workspaces": [
     "backend",
-    "fontend",
+    "frontend",
     "node-client"
-  ]
+  ],
+  "scripts": {
+    "start:client": "yarn workspace frontend dev",
+    "start:server": "yarn workspace backend start",
+    "start": "concurrently \"yarn start:server\" \"yarn start:client\"",
+    "routes": "yarn workspace backend routes",
+    "ncu": "ncu -u && yarn workspace node-client ncu && yarn workspace backend ncu",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|json|css)\"",
+    "format": "yarn prettier --write",
+    "lint": "yarn workspaces run lint",
+    "lint:write": "yarn workspaces run lint:write",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.2.1",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "**/*.+(js|jsx|ts|tsx|json|css)": [
+      "yarn format"
+    ]
+  }
 }
