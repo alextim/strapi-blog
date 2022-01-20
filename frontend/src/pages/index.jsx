@@ -22,11 +22,11 @@ const fetchQuery = async (path, params = null) => {
 
 function HomePage({ posts }) {
   return (
-    <div>
+    <div css={{ color: 'blue' }}>
       <h1>Welcome to Next.js!</h1>
-      {
-        posts?.map(({ attributes: { title } }, i) => <div key={i}>{title}</div>)
-      }
+      {posts?.map(({ attributes: { title } }) => (
+        <div key={title}>{title}</div>
+      ))}
     </div>
   );
 }
@@ -34,7 +34,7 @@ function HomePage({ posts }) {
 export default HomePage;
 
 export async function getServerSideProps() {
-/*
+  /*
   const query = qs.stringify({
     populate: [
       'tags',
@@ -48,9 +48,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      posts: posts ? posts.data :  null,
+      posts: posts ? posts.data : null,
     },
   };
 }
-
-

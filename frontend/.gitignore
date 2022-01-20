@@ -3,4 +3,13 @@
 /out/
 
 # vercel
+.now
 .vercel
+
+# Next uses .env.local for private data
+!.env
+!.env.development
+!.env.production
+!.env*.example
+.env.build
+.env*.local
