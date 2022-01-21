@@ -11,13 +11,15 @@
 
 const packageJson = require('./package.json');
 
-const noRedirectBlacklistedPaths = ['_next', 'api']; // Paths that mustn't have rewrite applied to them, to avoid the whole app to behave inconsistently
-const publicBasePaths = ['robots', 'static', 'favicon.ico']; // All items (folders, files) under /public directory should be added there, to avoid redirection when an asset isn't found
+// const noRedirectBlacklistedPaths = ['_next', 'api']; // Paths that mustn't have rewrite applied to them, to avoid the whole app to behave inconsistently
+// const publicBasePaths = ['robots', 'static', 'favicon.ico']; // All items (folders, files) under /public directory should be added there, to avoid redirection when an asset isn't found
+/*
 const noRedirectBasePaths = [
   // ...supportedLocales,
   ...publicBasePaths,
   ...noRedirectBlacklistedPaths,
 ]; // Will disable url rewrite for those items (should contain all supported languages and all public base paths)
+*/
 const date = new Date();
 
 // We use `filter` to make sure there are not empty element.
@@ -38,11 +40,6 @@ module.exports = {
   poweredByHeader: false,
   trailingSlash: true,
   swcMinify: true,
-  i18n: {
-    locales: ['en', 'uk', 'ru'],
-    defaultLocale: 'en',
-    localeDetection: false,
-  },
 
   env: {
     GITHUB_DISPATCH_TOKEN: process.env.GITHUB_DISPATCH_TOKEN,
@@ -90,6 +87,7 @@ module.exports = {
 
   async rewrites() {
     const rewrites = [
+      /*
       // I18n rewrites
       {
         // XXX Doesn't work locally (maybe because of rewrites), but works online
@@ -100,7 +98,7 @@ module.exports = {
         source: `/:locale((?!${noRedirectBasePaths.join('|')})[^/]+)(.*)`,
         destination: '/api/autoRedirectToLocalisedPage',
       },
-
+      */
       // Robots rewrites
       {
         source: '/robots.txt',

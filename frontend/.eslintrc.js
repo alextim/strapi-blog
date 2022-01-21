@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'no-restricted-exports': 0,
     'react/jsx-props-no-spreading': 0,
+    'react/function-component-definition': 0,
     '@emotion/syntax-preference': [2, 'object'],
     '@emotion/jsx-import': 0,
   },

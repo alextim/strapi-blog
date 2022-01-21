@@ -15,7 +15,7 @@ function GA() {
         dangerouslySetInnerHTML={{
           __html: `
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}, 'auto');
+          ga('create', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', 'auto');
           ga('send', 'pagehide');
         `,
         }}

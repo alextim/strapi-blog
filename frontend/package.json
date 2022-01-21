@@ -4,17 +4,22 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "404": "cp out/404/index.html out/404.html",
     "dev": "next dev",
     "build": "next build",
     "build:static": "next build && next export",
+    "postbuild": "yarn 404",
     "start": "next start",
     "lint:next": "next lint",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "serve": "http-server out -p 8080"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "next": "^12.0.8",
+    "next-i18next": "^10.2.0",
+    "next-language-detector": "^1.0.1",
     "qs": "^6.10.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -22,6 +27,7 @@
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/eslint-plugin": "^11.7.0",
-    "eslint-config-next": "^12.0.8"
+    "eslint-config-next": "^12.0.8",
+    "http-server": "^14.1.0"
   }
 }
